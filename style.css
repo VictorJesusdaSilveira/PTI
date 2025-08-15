@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Underdog&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1310px;
+    height: 100%;
+    margin: 0 auto;
+    /* border: solid rgb(0, 0, 0) 1px; */
+}
+
+.cabecalho {
+    height: 122px;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #fff 0%, #dbdbdb 100%);
+}
+
+.cabecalho .container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .logo img {
+    width: 165px;
+}
+
+.menu-cabecalho ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.menu-cabecalho i {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    color: white;
+
+    background-color: #9b9b9b;
+    padding: 5px;
+    border-radius: 50%;
+
+    transition: all 0.3s;
+}
+
+.menu-cabecalho a {
+    text-decoration: none;
+}
+
+.menu-cabecalho li:hover i {
+    background-color: transparent;
+    color: #9b9b9b;
+}
+
+/* MENU PRINCIPAL */
+
+.menu {
+    height: 55px;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #fff 0%, #dbdbdb 100%);
+}
+
+.menu ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #003c6a;
+    padding: 18px;
+    font-weight: 500;
+
+    transition: all 0.3s;
+}
+
+.menu a:hover {
+    background-color: white;
+}
+
+/* Banner */
+
+.banner {
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Noticias e Competencias */
+
+.noticias-competencias {
+    background-image: linear-gradient(100deg, #00315e, #000825 18%);
+}
+
+.noticias-competencias .titulo {
+    padding-top: 120px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.noticias {
+    display: flex;
+    gap: 20px;
+}
+
+.noticias .noticia {
+    flex: 1 1 25%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.noticia .imagem {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.noticia .imagem img {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.noticia .imagem:hover img {
+    scale: 1.15;
+}
+
+.noticia .data {
+    width: 100%;
+    background-color: #00315EBD;
+    color: #0082c4;
+    padding: 8px 0;
+    font-style: italic;
+    text-align: center;
+
+    position: absolute;
+    z-index: 1;
+
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+.noticia .imagem:hover .data {
+    bottom: -35px;
+}
+
+.noticia .post p {
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 22px;
+    padding: 20px;
+    color: #003c6a;
+}
+
+.noticia .botao {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.noticia .botao a {
+    text-decoration: none;
+    font-style: italic;
+    background-color: #ebebebeb;
+    color: #0082c4;
+    padding: 4px 15px;
+    border-radius: 25px;
+}
+
+.noticia .botao a:hover {
+    background-color: #0082c4;
+    color: #ebebebeb; /* nao ta trocando de cor quando passa o mouse em cima, verificar isso depois*/
+}
+
+.competencias {
+    display: flex;
+    padding-bottom: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.competencias .competencia {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    border: solid 1px #0082c4;
+    flex: 0 1 32%;
+}
+
+.competencias .competencia img{   
+    transition: all 0.5s ease;  
+    scale: 1.05;
+    width: 100%;
+
+}
+
+
+.competencias .competencia img:hover{
+    scale: 1.15;
+}
+
+.competencias .competencia h2{
+    text-align: center;
+    font-size: 17px;
+    width: 80%;
+    left: 10%;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: 20px
+}
+
+.oportunidades .titulo {
+    color: #003c6a;
+    font-size: 30px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.oportunidades .caixas {
+    height: 390px;
+    width: 310px;
+    border-radius: 5%;
+    float: left;
+    margin-bottom: 150px;
+}
+
+.oportunidades .caixas h2 {
+    color: white;
+    font-size: 30px;
+    padding: 30px 0px 20px 20px;
+}
+
+.oportunidades .y{
+    background-color: #fab518;
+    margin-right: 20px;
+}
+
+.oportunidades .g{
+    background-color: #009339;
+    margin-right: 20px;
+}
+
+.oportunidades .b{
+    background-color: #0082c4;
+    margin-right: 20px;
+}
+
+.oportunidades .r{
+    background-color: #e40f1c;
+}
+
+.oportunidades .caixas .opcao {
+    scale: 1;
+    transition: all 0.5s ease;
+}
+
+.oportunidades .caixas .opcao h3{
+    width: 270px;
+    height: 55px;
+    border-radius: 40px;
+    padding-left: 65px;
+    margin: 0px 20px 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    font-weight: 400;
+    align-content: center;
+}
+
+.oportunidades .caixas .opcao a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.oportunidades .caixas .opcao img{
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.oportunidades .caixas .opcao:hover {
+    scale: 1.10;
+}
+
+.conteiner-rodape{
+    height: 50vh;
+    background-color: #00315e;
+}
+
+
+.rodape {
+    background-image: linear-gradient(180deg, #00315E 42%, #000825 100%);
+    margin-top: 50px;
+    padding: 100px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+
+
+.esquerda {
+    width: 33.3%;
+    justify-self: start;
+    /* border: solid 1px yellow; */
+    float: left;
+    min-height: 250px;
+}
+
+.esquerda .logo img {
+    width: 165px;
+}
+
+.redes ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.redes ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #0082c4;
+    border: solid 1px #0082c4;
+    border-radius: 15px;
+}
+
+.redes ul li:hover {
+    background-color: #0c2c5c;
+    color: #0082c4;
+}
+
+.redes ul li:hover a {
+    color: #0082c4;
+}
+
+.redes a {
+    color: #0c2c5c;
+    text-decoration: none;
+    margin: 0px 2px;
+}
+
+.rodape-botao {
+    height: 30px;
+    width: 390px;
+    background-image: linear-gradient(#0758a3, #0c2c5c);
+    border-radius: 40px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 10px;
+}
+
+.rodape .meio{
+    text-align: end;
+    min-height: 250px;
+    margin-top: 30px;
+    width: 33.3%;
+    justify-self: center;
+    /* border: solid 1px aqua; */
+    float: left;
+}
+
+.rodape .meio ul{
+    list-style: none;
+}
+
+.rodape .meio a {
+    text-decoration: none;
+    color: white;
+}
+
+.rodape .meio ul li a:hover {
+    color: rgb(20, 140, 225);
+}
+
+.direita {
+    display: flex;
+    justify-content: end;
+    width: 33.3%;
+    /* border: solid 1px red; */
+    float: left;
+    margin-top: 15px;
+}
+
+.direita .rodape-botao {
+    width: 150px;
+}
+
+.direitos {
+    justify-self: last baseline;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direitos a {
+    text-decoration: none;
+    color: rgb(20, 140, 225);
+}
+
+
